@@ -3,7 +3,7 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { AuthContext } from '../../../Routes/AuthProvider';
 import { toast } from 'react-toastify';
 import { updateProfile } from 'firebase/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
     const { createUser } = useContext(AuthContext);
@@ -92,9 +92,10 @@ const Register = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn bg-gradient-to-tr from-[#ffaa11] to-[#11aaff] w-full">Register</button>
+                            <button className="btn bg-[#EF9651] w-full">Register</button>
                         </div>
                     </form>
+                    <p className='text-center my-3'>Already have an account? <Link to={'/login'}>Please Login</Link></p>
                 </div>
             </div>
         </div>
