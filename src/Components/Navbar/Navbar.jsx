@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
 
     const navLinks = <>
-        <li><NavLink>Home</NavLink></li>
-        <li><NavLink>Update</NavLink></li>
+        <li><NavLink to={'/'} className={({ isActive }) => isActive === true ? 'text-purple-700 font-bold' : 'font-semibold'}>Home</NavLink></li>
+        <li><NavLink to={'/update'} className={({ isActive }) => isActive === true ? 'text-purple-700 font-bold' : 'font-semibold'}>Update</NavLink></li>
     </>
 
     return (
@@ -39,7 +39,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <a className="btn">Login</a>
             </div>
         </div>
     );
