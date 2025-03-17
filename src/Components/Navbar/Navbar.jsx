@@ -1,6 +1,19 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../Routes/AuthProvider";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogout = () => {
+        logOut()
+            .then(() => {
+                return toast.success('User Logout successfully');
+            }).catch((error) => {
+                return toast.error(error.message);
+            });
+    }
 
     const navLinks = <>
         <li><NavLink to={'/'} className={({ isActive }) => isActive === true ? 'text-purple-700 font-bold' : 'font-semibold'}>Home</NavLink></li>
@@ -39,7 +52,16 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Login</a>
+                <div className="avatar mr-3">
+                    <div className="ring-primary ring-offset-base-100 w-8 rounded-full ring ring-offset-2">
+                        <img src={user ? user?.photoURL : "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"} />
+                    </div>
+                </div>
+                {
+                    user ?
+                        <button onClick={handleLogout} className="btn btn-error text-white">Logout</button> :
+                        <button className="btn btn-success">Login</button>
+                }
             </div>
         </div>
     );
