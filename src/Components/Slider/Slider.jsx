@@ -1,37 +1,53 @@
-import { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import "swiper/css/bundle";
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-// import './styles.css';
-
-// import required modules
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 const Slider = () => {
     return (
         <>
-            <Swiper
-                direction={'vertical'}
-                pagination={{
-                    clickable: true,
-                }}
-                modules={[Pagination]}
-                className="mySwiper"
-            >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
-            </Swiper>
+            <div>
+                <Swiper
+                    // slidesPerView={2}
+                    centeredSlides={true}
+                    spaceBetween={30}
+                    autoplay={{
+                        delay: 2000
+                    }}
+                    pagination={{
+                        type: 'fraction',
+                    }}
+                    navigation={true}
+                    modules={[Autoplay, Navigation]}
+                    loop={true}>
+                    <SwiperSlide>
+                        <div className="h-[60vh] w-full bg-cover bg-no-repeat bg-center bg-[url('https://i.ibb.co/tQsXMWh/view-from-balcony-apartment.jpg')]">
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="h-[60vh] w-full bg-cover bg-no-repeat bg-center bg-[url('https://i.ibb.co/T0JkV20/istockphoto-1448385933-1024x1024.jpg')]">
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="h-[60vh] w-full bg-cover bg-no-repeat bg-center bg-[url('https://i.ibb.co/XWg8SsB/rural-house-surroundings-daylight.jpg')]">
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="h-[60vh] w-full bg-cover bg-no-repeat bg-center bg-[url('https://i.ibb.co/s59LhkM/modern-luxury-domestic-room-comfortable-relaxation-generative-ai.jpg')]">
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="h-[60vh] w-full bg-cover bg-no-repeat bg-center bg-[url('https://i.ibb.co/jbg53CY/cafe-living-room-loft-style.jpg')]">
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="h-[60vh] w-full bg-cover bg-no-repeat bg-center bg-[url('https://i.ibb.co/4NGdbNH/beautiful-umbrella-chair-around-swimming-pool-hotel-resort.jpg')]">
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+
+            </div>
         </>
     );
 };

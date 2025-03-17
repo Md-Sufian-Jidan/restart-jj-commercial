@@ -1,6 +1,6 @@
 [
     {
-      "relevant_Image": "https://example.com/images/office1.jpg",
+      "relevant_Image": "https://i.ibb.co/nM29kVT6/7556-1.jpg",
       "estate_title": "Modern Office Tower",
       "id": "COM001",
       "segment_name": "Office Buildings",
@@ -12,7 +12,7 @@
       "facilities": ["conference room", "high-speed internet", "parking", "security system"]
     },
     {
-      "relevant_Image": "https://example.com/images/retail1.jpg",
+      "relevant_Image": "https://i.ibb.co/FqY6nj8H/849-1.jpg",
       "estate_title": "Prime Retail Space",
       "id": "COM002",
       "segment_name": "Retail Spaces",
@@ -24,7 +24,7 @@
       "facilities": ["storage room", "parking", "security cameras", "air conditioning"]
     },
     {
-      "relevant_Image": "https://example.com/images/warehouse1.jpg",
+      "relevant_Image": "https://i.ibb.co/Swtrzdr1/2150772876-1.jpg",
       "estate_title": "Spacious Warehouse",
       "id": "COM003",
       "segment_name": "Warehouses",
@@ -36,7 +36,7 @@
       "facilities": ["loading docks", "inventory management", "security system", "fire suppression"]
     },
     {
-      "relevant_Image": "https://example.com/images/industrial1.jpg",
+      "relevant_Image": "https://i.ibb.co/ynxhcphK/396-1.jpg",
       "estate_title": "Industrial Facility",
       "id": "COM004",
       "segment_name": "Industrial Facilities",
@@ -48,7 +48,7 @@
       "facilities": ["production lines", "break rooms", "offices", "parking"]
     },
     {
-      "relevant_Image": "https://example.com/images/restaurant1.jpg",
+      "relevant_Image": "https://i.ibb.co/dsMN6pv1/3392-1.jpg",
       "estate_title": "High-End Restaurant",
       "id": "COM005",
       "segment_name": "Restaurants",
@@ -60,7 +60,7 @@
       "facilities": ["dining area", "kitchen", "bar", "outdoor seating"]
     },
     {
-      "relevant_Image": "https://example.com/images/venue1.jpg",
+      "relevant_Image": "https://i.ibb.co/KxPx8Qs5/64712-1.jpg",
       "estate_title": "Entertainment Venue",
       "id": "COM006",
       "segment_name": "Entertainment Venues",
@@ -72,7 +72,7 @@
       "facilities": ["stage", "VIP lounges", "soundproofed rooms", "lighting system"]
     },
     {
-      "relevant_Image": "https://example.com/images/office2.jpg",
+      "relevant_Image": "https://i.ibb.co/Wv6DgrCD/1972-1.jpg",
       "estate_title": "Corporate Office Space",
       "id": "COM007",
       "segment_name": "Office Buildings",
@@ -84,7 +84,7 @@
       "facilities": ["private offices", "meeting rooms", "reception area", "high-speed internet"]
     },
     {
-      "relevant_Image": "https://example.com/images/retail2.jpg",
+      "relevant_Image": "https://i.ibb.co/G45xL30Z/1566-1.jpg",
       "estate_title": "Shopping Mall Outlet",
       "id": "COM008",
       "segment_name": "Retail Spaces",
@@ -96,7 +96,7 @@
       "facilities": ["air conditioning", "storage area", "display area", "CCTV surveillance"]
     },
     {
-      "relevant_Image": "https://example.com/images/warehouse2.jpg",
+      "relevant_Image": "https://i.ibb.co/cSqhpYCf/2148923142-1.jpg",
       "estate_title": "Distribution Warehouse",
       "id": "COM009",
       "segment_name": "Warehouses",
