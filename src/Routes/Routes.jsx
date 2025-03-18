@@ -7,6 +7,7 @@ import EstateDetails from "../Components/EstateDetails/EstateDetails";
 import PrivateRoute from "./PrivateRoute";
 import Error from "../Components/Error/Error";
 import UserProfile from "../Pages/UserProfile/UserProfile";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 
 export const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
             {
                 path: '/userProfile',
                 element: <PrivateRoute><UserProfile /></PrivateRoute>
+            },
+            {
+                path: '/updateProfile',
+                element: <PrivateRoute><UpdateProfile /></PrivateRoute>
             },
             {
                 path: '/estate/:id',
