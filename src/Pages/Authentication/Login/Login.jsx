@@ -1,12 +1,13 @@
 import { useContext } from "react";
 import { AuthContext } from "../../../Routes/AuthProvider";
 import { toast } from "react-toastify";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate, } from "react-router-dom";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 
 const Login = () => {
     const { googleLogin, githubLogin, signInUser } = useContext(AuthContext);
     const location = useLocation();
+    const navigate = useNavigate();
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -20,6 +21,8 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error);
+                toast.error('check your email and password and try again');
+                e.target.reset();
                 return toast.error(error.message);
             })
     };
@@ -88,7 +91,7 @@ const Login = () => {
                             <span>Github Login</span>
                         </div>
                     </div>
-                    <p className='text-center my-3'>Don't have an account? <Link to={'/register'}>Please Register</Link></p>
+                    <p className='text-center my-3'>Don't have an account? <Link className="text-blue-500" to={'/register'}>Please Register</Link></p>
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@ const Navbar = () => {
 
     const navLinks = <>
         <li><NavLink to={'/'} className={({ isActive }) => isActive === true ? 'text-purple-700 font-bold' : 'font-semibold'}>Home</NavLink></li>
-        <li><NavLink to={'/update'} className={({ isActive }) => isActive === true ? 'text-purple-700 font-bold' : 'font-semibold'}>Update</NavLink></li>
+        <li><NavLink to={'/userProfile'} className={({ isActive }) => isActive === true ? 'text-purple-700 font-bold' : 'font-semibold'}>User Profile</NavLink></li>
     </>
 
     return (
@@ -56,14 +56,14 @@ const Navbar = () => {
                 <div className="avatar mr-3">
                     <div className="ring-primary ring-offset-base-100 w-8 rounded-full ring ring-offset-2 z-20">
                         <img data-tooltip-id="my-tooltip" data-tooltip-content={user?.email} alt="photo url is not right" src={user ? user?.photoURL
-                                : "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} />
-                            <ReactTooltip id="my-tooltip" />
+                            : "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} />
+                        <ReactTooltip id="my-tooltip" />
                     </div>
                 </div>
                 {
                     user ?
                         <button onClick={handleLogout} className="btn btn-error text-white">Logout</button> :
-                        <button className="btn btn-success"><Link to={'/login'}>Login</Link></button>
+                        <Link to={'/login'}><button className="btn btn-success">Login</button></Link>
                 }
             </div>
         </div>

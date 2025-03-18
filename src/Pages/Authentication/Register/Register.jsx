@@ -16,9 +16,6 @@ const Register = () => {
         const photo = e.target.photoUrl.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-
-        console.log(name, photo, email, password);
-
         if (password.length < 6) {
             return toast.error('your password should at least 6 character long');
         }
@@ -31,7 +28,7 @@ const Register = () => {
         // creating user
         createUser(email, password)
             .then(result => {
-                console.log(result);
+                console.log(result.user);
                 //update user profile name and photo url
                 updateProfile(result.user, {
                     displayName: name, photoURL: photo
@@ -43,6 +40,7 @@ const Register = () => {
                         console.log(error);
                     })
                 navigate('/login');
+                e.target.reset();
                 return toast.success('User Register Successfully');
             })
             .catch(error => {
@@ -95,7 +93,7 @@ const Register = () => {
                             <button className="btn bg-[#EF9651] w-full">Register</button>
                         </div>
                     </form>
-                    <p className='text-center my-3'>Already have an account? <Link to={'/login'}>Please Login</Link></p>
+                    <p className='text-center my-3'>Already have an account? <Link className='text-blue-500' to={'/login'}>Please Login</Link></p>
                 </div>
             </div>
         </div>
