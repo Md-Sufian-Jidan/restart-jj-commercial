@@ -14,24 +14,24 @@ const EstateDetails = () => {
                 <img className="rounded-2xl w-full h-screen" src={relevant_Image} alt="property image" />
             </div>
             <div className="space-y-2">
-                <p className="text-center mt-2 font-bold text-2xl">Title: {estate_title}</p>
-                <p>{description}</p>
-                <div className="space-y-2 font-semibold">
+                <p className="text-center mt-2 font-bold text-2xl">Estate title: {estate_title}</p>
+                <p className='text-lg'>Description: {description}</p>
+                <div className="space-y-2 font-semibold flex items-center justify-between">
                     <p>Location : <span>{location}</span></p>
                     <p>Segment Name : <span>{segment_name}</span></p>
                     <p>Area : <span>{Area}</span></p>
                 </div>
                 <p className="text-xl font-bold ">Facilities :</p>
-                <ul >
+                <ul className='flex items-center justify-between'>
                     {facilities?.map((fac, idx) => <li key={idx}>{idx + 1}){fac}</li>)}
                 </ul>
-                <div className="font-semibold">
-                    <p>Price : $ <span>{price}</span></p>
+                <div className="font-semibold flex items-center justify-between">
+                    <p>Price : <span>{price}</span></p>
                     <p>Status : <span>{Status}</span></p>
                 </div>
             </div>
-            <div className="navbar-center">
-                <button className="btn bg-[#7832c9]">Buy Now</button>
+            <div className="text-center">
+                <button className="btn bg-[#876543] text-white">Buy Now</button>
             </div>
         </div>
     );
