@@ -1,12 +1,15 @@
-# React + Vite
+# Website Name: Jj commercial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## <a href="https://restart-jj-real-state.web.app/" target="_blank">Live Link<a/>
 
-Currently, two official plugins are available:
+Here is the top feature of my website :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- the website has dynamic route and dynamic title also
+- The website is for the people how wants to buy a Single-family homes, townhouses, apartments, student housing, senior living communities, vacation rentals etc.
+- The data of the properties are nicely managed by a card and each card has single property data.
+- if anyone clcik the view detail it will go on the property details. where you can see more about the property.
+- The main feature of the website is the login and register account function
+- if some one is new in the website for browsing the website first he or she will make a account in the website or if he or she's account all ready exists in the website he or she can login in the website.
+- Then he or she can browse the website easily And they can buy any properties or you can rent a properties of the Website contains.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### At End Stay with Us For More New Updates and Enjoy Your Buying
