@@ -1,12 +1,18 @@
 import { useContext } from 'react';
 import { AuthContext } from '../../Routes/AuthProvider';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const UserProfile = () => {
     const { user } = useContext(AuthContext);
     const { displayName, email, photoURL, phoneNumber, } = user || {}
     return (
         <div>
+            <Helmet>
+                <title>
+                    Jj Commercial || User Profile
+                </title>
+            </Helmet>
             <div className="flex flex-col max-w-md mx-auto p-6 dark:bg-gray-50 dark:text-gray-800">
                 <img src={user && photoURL} alt="No User Photo" className="flex-shrink-0 object-cover h-64 rounded-sm sm:h-96 dark:bg-gray-500 aspect-square" />
                 <div>
